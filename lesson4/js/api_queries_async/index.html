@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax api test</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @keyframes my-animation {
+        from {
+            height: 15%;
+            width: 20%;
+            box-shadow: 5px 5px 5px 5px black;
+        }
+        to {
+            height: 20%;
+            width: 25%;
+            box-shadow: 15px 15px 15px 15px rgb(2, 212, 58);
+            transform: rotate(360deg);
+        }
+        }
+        .container > img {
+            height: 15%;
+            width: 20%;
+            margin: 15px;
+            box-shadow: 5px 5px 5px 5px black;
+            /* animation properties */
+            animation-name: my-animation;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>cats</h1>
+    </header>
+    <div class="container">
+        
+    </div>
+    <footer>
+        <h1>Academy Step</h1>
+    </footer>
+    <script src="./cat_api.js"></script>
+</body>
+</html>
