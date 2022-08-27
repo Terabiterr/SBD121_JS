@@ -1,0 +1,134 @@
+body {
+    background-image: url('../img/background.png');
+    margin: 0;
+    padding: 0;
+}
+.header {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: large;
+    display: inline-block; /*блочный тег*/
+}
+.containerHeader {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#aboutLink {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+#aboutLink::before {
+    content: "|";
+}
+#aboutLink::after {
+    content: "|";
+}
+.search {
+    margin: 20px;
+}
+.search > input {
+    height: 25px;
+    width: 150px;
+    border-radius: 30%;
+}
+.userAuthReg {
+    margin: 10px;
+}
+.userAuthReg > button {
+    width: 75px;
+    height: 50px;
+}
+.userAuthReg > button:hover {
+    background-color: green;
+}
+.userCabinet {
+    display: none;
+    margin: 10px;
+}
+.userCabinet > img {
+    height: 50px;
+    width: 50px;
+}
+.logo {
+    float: left;
+    height: 100px; /*Высота header*/
+}
+.logo > img {
+    height: 100%; 
+    width: 100px;
+    float: left;
+}
+.navigation {
+    margin: 10px;
+    font: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 27px;
+    color: rgb(249, 0, 0);
+}
+.setParamsBlock > button {
+    width: 75px;
+    height: 25px;
+}
+.setParamsBlock > button:hover {
+    background-color: blue;
+}
+.menu {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:baseline;
+}
+.menu > ul {
+    list-style-type: none;
+}
+.menu > ul > li {
+    display: inline;
+    margin: 10px;
+}
+.menu > ul > li > button {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu > ul > li > button:hover {
+    background-color: grey;
+}
+.containerArticles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 27px;
+}
+.containerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.copy {
+    color: blueviolet;
+}
+.academyStep {
+    color: blue;
+}

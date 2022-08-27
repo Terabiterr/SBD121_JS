@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FNF</title>
+</head>
+<body onload="setBlocks()">
+    <header class="header">
+        <div class="logo">
+            <img src="./img/fnfLogo.png" alt="">
+        </div>
+        <div class="containerHeader">
+            <div class="userAuthReg">
+                <button onclick="authPage()" type="button" class="btnAuth">auth</button>
+                <button onclick="registerPage()" type="button" class="btnReg">register</button>
+            </div>
+            <div class="userCabinet">
+                <img src="./img/userCabinet.gif" alt="">
+                <button onclick="exitAuth()" type="button" class="exitUser">exit</button>
+            </div>
+            <div class="search">
+                <input type="text"  value="search:">
+            </div>
+            <div>
+                <a id="aboutLink" href="./html/about.html">about</a>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="setParamsBlock">
+            <input class="userSetBlocks" type="text" value="10">
+            <button onclick="setBlocks()" type="submit">set</button>
+        </div>
+    </nav>
+    <menu>
+        <div class="menu">
+            <ul class="menuContainer">
+                <li><button type="submit">link 1</button></li>
+                <li><button type="submit">link 2</button></li>
+                <li><button type="submit">link 3</button></li>
+                <li><button type="submit">link 4</button></li>
+                <li><button type="submit">link 5</button></li>
+                <li><button type="submit">link 6</button></li>
+                <li><button type="submit">link 7</button></li>
+                <li><button type="submit">link 8</button></li>
+                <li><button type="submit">link 9</button></li>
+                <li><button type="submit">link 10</button></li>
+            </ul>
+        </div>
+    </menu>
+    <article>
+        <div class="containerArticles">
+            <!--flex articles-->
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="containerFooter">
+            <div class="copy">
+                <strong>&copy;</strong>
+            </div>
+            <div class="academyStep">
+                <span>JS Academy Step</span>
+            </div>
+        </div>
+    </footer>
+    <script type="importmap" src="./model/user.js"></script>
+    <script src="./js/generationArticles.js"></script>
+    <script src="./js/paramsStart.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+</html>

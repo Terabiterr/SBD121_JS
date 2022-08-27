@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/style.css">  
+    <title>jquery</title>
+</head>
+<body>
+    <label id="lblNameId" for="text">enter your name: </label>
+    <input id="inputNameId" type="text"><br>
+    <button id="btnSendId">send</button><br>
+    <i id="helloUserId"></i>
+    <script>
+        $(document).ready(() => {
+            $('#btnSendId').click(() => {
+                $('#helloUserId').append($('#inputNameId').val());
+            })
+        })
+    </script>
+</body>
+</html>
